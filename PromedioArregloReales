@@ -1,0 +1,23 @@
+function calcularPromedio(arreglo) {
+  if (arreglo.length === 0) {
+    return 0; // Si el arreglo está vacío, el promedio es 0.
+  }
+
+  let suma = 0;
+
+  for (let i = 0; i < arreglo.length; i++) {
+    if (arreglo[i] >= 0) {
+      suma += arreglo[i];
+    } else {
+      console.log("El arreglo contiene un número negativo en la posición " + i + ". Este número se omitirá en el cálculo del promedio.");
+    }
+  }
+
+  const promedio = suma / arreglo.length;
+  return promedio;
+}
+
+//Uso
+const arreglo = [8,7,8,5,22,2,3,10,7,-5]; // Reemplaza esto con tu propio arreglo de números reales positivos
+const promedio = calcularPromedio(arreglo);
+console.log("El promedio de los elementos en el arreglo es:", promedio);
