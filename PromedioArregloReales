@@ -18,6 +18,6 @@ function calcularPromedio(arreglo) {
 }
 
 //Uso
-const arreglo = [8,7,8,5,22,2,3,10,7,-5]; // Reemplaza esto con un arreglo de números reales
+const arreglo = [8,7,8,5,22,2,3,10,35,-5]; // Reemplaza esto con un arreglo de números reales
 const promedio = calcularPromedio(arreglo);
 console.log("El promedio de los elementos en el arreglo es:", promedio);
